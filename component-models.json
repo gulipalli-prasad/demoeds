@@ -385,12 +385,6 @@
         "valueType": "string"
       },
       {
-        "component": "richtext",
-        "name": "rte2",
-        "label": "Rich Text - List2",
-        "valueType": "string"
-      },
-      {
         "component": "tab",
         "label": "Column 2",
         "name": "col2"
