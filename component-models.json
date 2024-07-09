@@ -406,12 +406,10 @@
         "label": "Rich Text - List",
         "valueType": "string"
       },
-
       {
-        "component": "richtext",
-        "name": "rte4",
-        "label": "Rich Text - List",
-        "valueType": "string"
+        "component": "tab",
+        "label": "Column 4",
+        "name": "col4"
       }
     ]
   },
