@@ -57,24 +57,24 @@
 
 @font-face {
   font-family: "Fira Sans Normal";
-  src: url("fonts/FiraSans-Regular.ttf") format("truetype");
+  src: url("../fonts/FiraSans-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fira Sans Bold";
-  src: url("fonts/FiraSans-Bold.ttf") format("truetype");
+  src: url("../fonts/FiraSans-Bold.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fira Sans ExtraBold";
-  src: url("fonts/FiraSans-ExtraBold.ttf") format("truetype");
+  src: url("../fonts/FiraSans-ExtraBold.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Fira Sans Medium";
-  src: url("fonts/FiraSans-Medium.ttf") format("truetype");
+  src: url("../fonts/FiraSans-Medium.ttf") format("truetype");
   font-style: normal;
 }
