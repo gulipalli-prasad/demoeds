@@ -158,3 +158,457 @@ main pre {
 a:any-link {
   text-decoration: none;
 }
+
+/*
+*/
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+.grey-bg {
+  background-color: #fcfcfc;
+  padding: 1.875rem;
+  margin: 50px 0;
+  float: left;
+  width: 100%;
+}
+
+.grey-bg .user-information-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.grey-bg .user-information-box .user-img {
+  width: 20%;
+  min-width: 100px;
+  text-align: center;
+  align-self: end;
+}
+
+.grey-bg .user-information-box .user-img img {
+  width: 77px;
+  height: 77px;
+  background: #eeee;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.grey-bg .user-information-box .user-details {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.grey-bg .user-information-box .user-details .user_bx {
+  padding-top: 10px;
+}
+
+.grey-bg .user-information-box .user-details .user_bx .user_name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 3px;
+  line-height: 24px;
+}
+
+.grey-bg .user-information-box .user-details .user_bx .user_designation {
+  font-weight: normal;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+.grey-bg .user-information-box .user-details .user_bx .user_addr {
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 24px;
+}
+
+.grey-bg .user-information-box .user-details .user_logout {
+  align-self: inherit;
+  margin-top: 10px;
+}
+
+.user_logout #logoutButton {
+  background: #000000;
+  padding: 7px 10px;
+  color: #fff;
+  font-size: 0.875rem;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.user_logout #logoutButton:hover {
+  background: #ffffff;
+  border-color: #000000;
+  color: #000;
+}
+
+.grey-bg .dealer-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -12px;
+  margin-right: -12px;
+  align-items: stretch;
+}
+
+.grey-bg .dealer-menu li:nth-child(-n + 4) {
+  margin-bottom: unset;
+}
+
+.grey-bg .dealer-menu li {
+  width: 100%;
+  margin-bottom: 10px !important;
+}
+
+.grey-bg .dealer-menu li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  min-height: unset;
+  height: 100%;
+}
+
+.grey-bg .dealer-menu li a .d-grid-item {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  max-width: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grey-bg .dealer-menu li a .d-grid-item .d-grid-item-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(241, 241, 241, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 15px;
+}
+
+.grey-bg .dealer-menu li a .d-grid-item .d-grid-item-icon img {
+  display: block;
+  max-width: 100%;
+}
+
+.grey-bg .dealer-menu li a .d-grid-item .d-grid-item-title {
+  font-size: 1rem;
+  margin-top: 0;
+  color: #000000;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.grey-bg .dealer-menu li a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.grey-bg .dealer-menu li a:hover .d-grid-item .d-grid-item-icon {
+  background-color: #fff !important;
+}
+
+.grey-bg .dealer-menu li a:hover .d-grid-item .d-grid-item-title {
+  color: #fff;
+}
+
+.popUpmain {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it's above other content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.popUpmain .modal-content {
+  padding: 35px;
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.popUpmain .modal-content .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding-top: 17px;
+}
+.popUpmain .modal-content .popupContent {
+  text-align: center;
+}
+.popUpmain .modal-content .popupContent.blue h2 {
+  color: #0066ff;
+}
+.popUpmain .modal-content .popupContent h2 img {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+  height: 32px;
+}
+.popUpmain .modal-content .popupContent p {
+  font-size: 1.0625rem;
+  word-break: break-word;
+  margin: 25px auto 35px auto;
+  font-weight: 400;
+}
+.blackButton {
+  display: inline-block;
+}
+.popUpmain .modal-content .popupContent.blue .blackButton button {
+  text-decoration: none;
+  padding: 11px 12px 9px 12px;
+  display: inline-block;
+  font-size: 0.9375rem;
+  color: #ffffff;
+  font-weight: 400;
+  transition: 0.5s;
+  text-transform: uppercase;
+  background: #0066ff;
+  border: #0066ff solid 1px;
+}
+.popUpmain .modal-content .popupContent.blue .blackButton button:hover {
+  background: #fff;
+  border: #000 solid 1px;
+  color: #000000;
+}
+/* Animation for the popup */
+.popup.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+.modal-miscellaneous__grey-bg .dealer-menu li .d-grid-item-title {
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+.modal-miscellaneous__grey-bg .dealer-menu li > a {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 186px;
+  padding-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal-miscellaneous-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000;
+  text-align: center;
+  display: block;
+  margin-bottom: 32px;
+}
+.modal-miscellaneous__body .grey-bg {
+  background-color: transparent;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.modal-miscellaneous__body .dealer-menu li {
+  flex-basis: 50%;
+}
+.modal-miscellaneous__body .grey-bg .dealer-menu li {
+  flex-basis: 50%;
+}
+.modal-miscellaneous__body .grey-bg .dealer-menu li a {
+  padding: 26px 20px 34px 20px;
+}
+#miscellaneous-tile-popup .modal-content {
+  padding: 50px 70px;
+}
+@media (min-width: 999px) {
+  .grey-bg {
+    padding: 4.375rem;
+  }
+
+  .grey-bg .user-information-box {
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  .grey-bg .user-information-box .user-details {
+    flex-direction: row;
+  }
+
+  .grey-bg .user-information-box .user-details .user_logout {
+    align-self: flex-end;
+    margin-top: 0;
+  }
+
+  .grey-bg .user-information-box .user-details .user_logout a:hover {
+    text-decoration: none;
+  }
+
+  .grey-bg .dealer-menu li {
+    flex-basis: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .grey-bg .dealer-menu li:nth-child(-n + 4) {
+    margin-bottom: 24px;
+  }
+
+  .grey-bg .dealer-menu li a {
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 40px 34px 40px;
+    min-height: 206px;
+  }
+
+  .grey-bg .dealer-menu li a .d-grid-item {
+    align-items: center;
+    flex-direction: column;
+    max-width: 130px;
+    text-align: center;
+  }
+
+  .grey-bg .dealer-menu li a .d-grid-item .d-grid-item-icon {
+    height: 86px;
+    width: 86px;
+    padding: 0;
+  }
+
+  .grey-bg .dealer-menu li a .d-grid-item .d-grid-item-title {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 999px) {
+  .grey-bg .dealer-menu li:last-child {
+    margin-bottom: 0;
+  }
+}
+.arena-style {
+  .grey-bg .dealer-menu li a:hover {
+    background-color: #164b91;
+    color: #fff;
+  }
+  .user_logout #logoutButton {
+    background-color: #164b91;
+  }
+}
+
+/*
+*/
+
+p {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h3,
+h5,
+h6 {
+  margin: 0;
+}
+h2 {
+  font-family: "Kepler Std";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+}
+.text-color-primary {
+  color: var(--Primary-Main, #18171a);
+}
+.text-color-tertiary {
+  color: var(--Tertiary-White, #fff);
+}
+
+.btn {
+  display: flex;
+  height: 32px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-decoration: none;
+}
+.btn--primary-solid {
+  background: var(--Primary-Main, #18171a);
+  color: var(--Tertiary-White, #fff);
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.btn--link {
+  font-family: "Fira Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 10.24px;
+  border-bottom: 0.64px solid var(--Primary-Main, #18171a);
+}
+.btn--link-primary {
+  color: var(--Primary-Main, #18171a);
+}
+.tn--link img {
+  height: 16px;
+}
