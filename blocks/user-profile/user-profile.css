@@ -45,6 +45,7 @@
   font-weight: 500;
   margin-bottom: 3px;
   line-height: 24px;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .grey-bg .user-information-box .user-details .user_bx .user_designation {
@@ -77,6 +78,8 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
+  font-family: "Fira Sans", sans-serif;
+  width: 72.7083px;
 }
 .user_logout #logoutButton:hover {
   background: #ffffff;
@@ -250,6 +253,14 @@
   background: #0066ff;
   border: #0066ff solid 1px;
 }
+.blackButton .logout_yes {
+  width: 49.635px;
+  font-family: "Fira Sans", sans-serif;
+}
+.blackButton .logout_no {
+  width: 45.958px;
+  font-family: "Fira Sans", sans-serif;
+}
 .popUpmain .modal-content .popupContent.blue .blackButton button:hover {
   background: #fff;
   border: #000 solid 1px;
@@ -259,51 +270,7 @@
 .popup.fade-in {
   animation: fadeIn 0.3s ease-in-out forwards;
 }
-.modal-miscellaneous__grey-bg .dealer-menu li .d-grid-item-title {
-  font-weight: 400 !important;
-  font-size: 15px !important;
-}
-.modal-miscellaneous__grey-bg .dealer-menu li > a {
-  padding-left: 0;
-  padding-right: 0;
-  min-height: 186px;
-  padding-bottom: 10px;
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.modal-miscellaneous-title {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #000;
-  text-align: center;
-  display: block;
-  margin-bottom: 32px;
-}
-.modal-miscellaneous__body .grey-bg {
-  background-color: transparent;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.modal-miscellaneous__body .dealer-menu li {
-  flex-basis: 50%;
-}
-.modal-miscellaneous__body .grey-bg .dealer-menu li {
-  flex-basis: 50%;
-}
-.modal-miscellaneous__body .grey-bg .dealer-menu li a {
-  padding: 26px 20px 34px 20px;
-}
-#miscellaneous-tile-popup .modal-content {
-  padding: 50px 70px;
-}
 @media (min-width: 999px) {
   .grey-bg {
     padding: 4.375rem;
@@ -326,122 +293,4 @@
   .grey-bg .user-information-box .user-details .user_logout a:hover {
     text-decoration: none;
   }
-
-  .grey-bg .dealer-menu li {
-    flex-basis: 25%;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .grey-bg .dealer-menu li:nth-child(-n + 4) {
-    margin-bottom: 24px;
-  }
-
-  .grey-bg .dealer-menu li a {
-    flex-direction: column;
-    align-items: center;
-    padding: 26px 40px 34px 40px;
-    min-height: 206px;
-  }
-
-  .grey-bg .dealer-menu li a .d-grid-item {
-    align-items: center;
-    flex-direction: column;
-    max-width: 130px;
-    text-align: center;
-  }
-
-  .grey-bg .dealer-menu li a .d-grid-item .d-grid-item-icon {
-    height: 86px;
-    width: 86px;
-    padding: 0;
-  }
-
-  .grey-bg .dealer-menu li a .d-grid-item .d-grid-item-title {
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 999px) {
-  .grey-bg .dealer-menu li:last-child {
-    margin-bottom: 0;
-  }
-}
-.arena-style {
-  .grey-bg .dealer-menu li a:hover {
-    background-color: #164b91;
-    color: #fff;
-  }
-  .user_logout #logoutButton {
-    background-color: #164b91;
-  }
-}
-
-/*
-  */
-
-p {
-  font-family: "Fira Sans", sans-serif;
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h3,
-h5,
-h6 {
-  margin: 0;
-}
-h2 {
-  font-family: "Kepler Std";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: 0.64px;
-}
-.text-color-primary {
-  color: var(--Primary-Main, #18171a);
-}
-.text-color-tertiary {
-  color: var(--Tertiary-White, #fff);
-}
-
-.btn {
-  display: flex;
-  height: 32px;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  text-decoration: none;
-}
-.btn--primary-solid {
-  background: var(--Primary-Main, #18171a);
-  color: var(--Tertiary-White, #fff);
-  text-align: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-}
-.btn--link {
-  font-family: "Fira Sans";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 13px;
-  text-decoration: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 10.24px;
-  border-bottom: 0.64px solid var(--Primary-Main, #18171a);
-}
-.btn--link-primary {
-  color: var(--Primary-Main, #18171a);
-}
-.tn--link img {
-  height: 16px;
 }
