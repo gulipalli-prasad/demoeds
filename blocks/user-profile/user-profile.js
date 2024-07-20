@@ -4,31 +4,33 @@ export default function decorate(block) {
     popupHeadingEl,
     popupDescEl,
     linkEl,
-    yesEl,
-    noEl,
+    yesButtonEl,
+    noButtonEl,
     userImageEl,
-    altUserImageEl,
-    crossFormEl,
-    altCrossFormEl,
-    infoIconEl,
-    altInfoIconEl,
+    userImageAltTxtEl,
+    crossFormImageEl,
+    crossFormImageAltTxtEl,
+    infoIconImageEl,
+    infoIconImageAltTxtEl,
   ] = block.children;
 
   const logoutText = logoutTextEl?.textContent?.trim() || "";
   const popupHeading = popupHeadingEl?.textContent?.trim() || "";
   const popupDesc = popupDescEl?.textContent?.trim() || "";
   const link = linkEl?.querySelector("a")?.href || "#";
-  const yesText = yesEl?.textContent?.trim() || "";
-  const noText = noEl?.textContent?.trim() || "";
+  const yesButton = yesButtonEl?.textContent?.trim() || "";
+  const noButton = noButtonEl?.textContent?.trim() || "";
   const userImageElement = userImageEl.querySelector("img");
   const userImage = userImageElement?.getAttribute("src")?.trim() || "";
-  const altUserImage = altUserImageEl?.textContent?.trim() || "";
-  const crossFormElement = crossFormEl.querySelector("img");
-  const crossForm = crossFormElement?.getAttribute("src")?.trim() || "";
-  const altCrossForm = altCrossFormEl?.textContent?.trim() || "";
-  const infoIconElement = infoIconEl.querySelector("img");
-  const infoIcon = infoIconElement?.getAttribute("src")?.trim() || "";
-  const altInfoIcon = altInfoIconEl?.textContent?.trim() || "";
+  const userImageAltTxt = userImageAltTxtEl?.textContent?.trim() || "";
+  const crossFormImageElement = crossFormImageEl.querySelector("img");
+  const crossFormImage =
+    crossFormImageElement?.getAttribute("src")?.trim() || "";
+  const crossFormImageAltTxt =
+    crossFormImageAltTxtEl?.textContent?.trim() || "";
+  const infoIconImageElement = infoIconImageEl.querySelector("img");
+  const infoIconImage = infoIconImageElement?.getAttribute("src")?.trim() || "";
+  const infoIconImageAltTxt = infoIconImageAltTxtEl?.textContent?.trim() || "";
 
   function createProfileCard(data) {
     return `
@@ -36,7 +38,7 @@ export default function decorate(block) {
           <div class="grey-bg">
               <div class="user-information-box">
                   <div class="user-img">
-                      <img src="${userImage}" alt="${altUserImage}">
+                      <img src="${userImage}" alt="${userImageAltTxt}">
                   </div>
                   <div class="user-details">
                       <div class="user_bx">
@@ -45,7 +47,7 @@ export default function decorate(block) {
                           <p class="user_addr" id="user_addr">411037, PUNE MAHARASHTRA</p>
                       </div>
                       <div class="user_logout">
-                          <a href="javascript:void(0)" id="logoutButton">${logoutText}</a>
+                          <a href="#" id="logoutButton">${logoutText}</a>
                       </div>
                   </div>
               </div>
@@ -59,16 +61,16 @@ export default function decorate(block) {
       <div class="popUpmain" id="popup" style="display:none;">
         <div class="modal-content">
           <div class="close" id="close-popup">
-            <img src="${crossForm}" alt="${altCrossForm}">
+            <img src="${crossFormImage}" alt="${crossFormImageAltTxt}">
           </div>
           <div class="popupContent blue">
-            <h2><img src="${infoIcon}" alt="${altInfoIcon}"> ${popupHeading}</h2>
+            <h2><img src="${infoIconImage}" alt="${infoIconImageAltTxt}"> ${popupHeading}</h2>
             <p>${popupDesc}</p>
             <div class="blackButton">
-              <button type="button" class="logout_yes" id="yesButton">${yesText}</button>
+              <button type="button" class="logout_yes" id="yesButton">${yesButton}</button>
             </div>
             <div class="blackButton">
-              <button type="button" class="logout_no" id="noButton">${noText}</button>
+              <button type="button" class="logout_no" id="noButton">${noButton}</button>
             </div>
           </div>
         </div>

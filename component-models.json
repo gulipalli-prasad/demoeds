@@ -848,16 +848,16 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "yes",
+        "name": "yesButton",
         "value": "",
-        "label": "Yes"
+        "label": "Yes Button"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "no",
+        "name": "noButton",
         "value": "",
-        "label": "No"
+        "label": "No Button"
       },
       {
         "component": "reference",
@@ -869,37 +869,37 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "altUserImage",
+        "name": "userImageAltTxt",
         "value": "",
-        "label": "Alt UserImage"
+        "label": "UserImage AltTxt"
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "crossForm",
+        "name": "crossFormImage",
         "value": "",
-        "label": "Cross Form"
+        "label": "CrossForm Image"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "altCrossForm",
+        "name": "crossFormImageAltTxt",
         "value": "",
-        "label": "Alt CrossForm"
+        "label": "CrossFormImage AltTxt"
       },
       {
         "component": "reference",
         "valueType": "string",
-        "name": "infoIcon",
+        "name": "infoIconImage",
         "value": "",
-        "label": "Info Icon"
+        "label": "InfoIcon Image"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "altInfoIcon",
+        "name": "infoIconImageAltTxt",
         "value": "",
-        "label": "Alt InfoIcon"
+        "label": "InfoIconImage AltTxt"
       }
     ]
   }
