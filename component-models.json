@@ -867,6 +867,13 @@
         "label": "User Image"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "altUserImage",
+        "value": "",
+        "label": "Alt UserImage"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "crossForm",
@@ -874,11 +881,25 @@
         "label": "Cross Form"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "altCrossForm",
+        "value": "",
+        "label": "Alt CrossForm"
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "infoIcon",
         "value": "",
         "label": "Info Icon"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "altInfoIcon",
+        "value": "",
+        "label": "Alt InfoIcon"
       }
     ]
   }

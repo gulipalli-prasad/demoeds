@@ -7,8 +7,11 @@ export default function decorate(block) {
     yesEl,
     noEl,
     userImageEl,
+    altUserImageEl,
     crossFormEl,
+    altCrossFormEl,
     infoIconEl,
+    altInfoIconEl,
   ] = block.children;
 
   const logoutText = logoutTextEl?.textContent?.trim() || "";
@@ -19,10 +22,13 @@ export default function decorate(block) {
   const noText = noEl?.textContent?.trim() || "";
   const userImageElement = userImageEl.querySelector("img");
   const userImage = userImageElement?.getAttribute("src")?.trim() || "";
+  const altUserImage = altUserImageEl?.textContent?.trim() || "";
   const crossFormElement = crossFormEl.querySelector("img");
   const crossForm = crossFormElement?.getAttribute("src")?.trim() || "";
+  const altCrossForm = altCrossFormEl?.textContent?.trim() || "";
   const infoIconElement = infoIconEl.querySelector("img");
   const infoIcon = infoIconElement?.getAttribute("src")?.trim() || "";
+  const altInfoIcon = altInfoIconEl?.textContent?.trim() || "";
 
   function createProfileCard(data) {
     return `
@@ -30,7 +36,7 @@ export default function decorate(block) {
           <div class="grey-bg">
               <div class="user-information-box">
                   <div class="user-img">
-                      <img src="${userImage}" alt="user image">
+                      <img src="${userImage}" alt="${altUserImage}">
                   </div>
                   <div class="user-details">
                       <div class="user_bx">
@@ -53,10 +59,10 @@ export default function decorate(block) {
       <div class="popUpmain" id="popup" style="display:none;">
         <div class="modal-content">
           <div class="close" id="close-popup">
-            <img src="${crossForm}" alt="cross form">
+            <img src="${crossForm}" alt="${altCrossForm}">
           </div>
           <div class="popupContent blue">
-            <h2><img src="${infoIcon}" alt="info icon"> ${popupHeading}</h2>
+            <h2><img src="${infoIcon}" alt="${altInfoIcon}"> ${popupHeading}</h2>
             <p>${popupDesc}</p>
             <div class="blackButton">
               <button type="button" class="logout_yes" id="yesButton">${yesText}</button>
