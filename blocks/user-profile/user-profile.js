@@ -45,7 +45,7 @@ export default function decorate(block) {
                           <p class="user_addr" id="user_addr">411037, PUNE MAHARASHTRA</p>
                       </div>
                       <div class="user_logout">
-                          <a href="#" id="logoutButton">${logoutText}</a>
+                          <a href="javascript:void(0)" id="logoutButton">${logoutText}</a>
                       </div>
                   </div>
               </div>
