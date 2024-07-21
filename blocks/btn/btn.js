@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  // Create the initial form structure
+  // Create the initial structure with form and table area
 
   block.innerHTML = `
 
