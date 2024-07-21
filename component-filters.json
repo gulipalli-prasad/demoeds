@@ -53,9 +53,5 @@
   {
     "id": "immersive-teaser",
     "components": ["teaser"]
-  },
-  {
-    "id": "userprofile",
-    "components": ["cards"]
   }
 ]
