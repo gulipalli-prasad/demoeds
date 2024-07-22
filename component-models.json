@@ -867,6 +867,13 @@
             "label": "No Button"
           },
           {
+            "component": "reference",
+            "valueType": "string",
+            "name": "userImage",
+            "value": "",
+            "label": "User Image"
+          },
+          {
             "component": "text",
             "valueType": "string",
             "name": "userimagealttxt",
