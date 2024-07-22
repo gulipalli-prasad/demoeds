@@ -869,23 +869,23 @@
           {
             "component": "text",
             "valueType": "string",
-            "name": "userImageAltTxt",
+            "name": "userimagealttxt",
             "value": "",
-            "label": "User Image Alt Text"
+            "label": "UserImage AltText"
           },
           {
             "component": "text",
             "valueType": "string",
-            "name": "crossFormImageAltTxt",
+            "name": "crossformimagealttxt",
             "value": "",
-            "label": "CrossForm Image Alt Text"
+            "label": "CrossFormImage AltText"
           },
           {
             "component": "text",
             "valueType": "string",
-            "name": "infoIconImageAltTxt",
+            "name": "infoiconimagealttxt",
             "value": "",
-            "label": "InfoIcon Image Alt Text"
+            "label": "InfoIconImage AltText"
           }
         ]
       }

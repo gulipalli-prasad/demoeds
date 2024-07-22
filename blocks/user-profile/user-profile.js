@@ -20,16 +20,10 @@ export default function decorate(block) {
   const link = linkEl?.querySelector("a")?.href || "#";
   const yesButton = yesButtonEl?.textContent?.trim() || "";
   const noButton = noButtonEl?.textContent?.trim() || "";
-  const userImageElement = userImageEl.querySelector("img");
-  const userImage = userImageElement?.getAttribute("src")?.trim() || "";
+
   const userImageAltTxt = userImageAltTxtEl?.textContent?.trim() || "";
-  const crossFormImageElement = crossFormImageEl.querySelector("img");
-  const crossFormImage =
-    crossFormImageElement?.getAttribute("src")?.trim() || "";
   const crossFormImageAltTxt =
     crossFormImageAltTxtEl?.textContent?.trim() || "";
-  const infoIconImageElement = infoIconImageEl.querySelector("img");
-  const infoIconImage = infoIconImageElement?.getAttribute("src")?.trim() || "";
   const infoIconImageAltTxt = infoIconImageAltTxtEl?.textContent?.trim() || "";
 
   function createProfileCard(data) {
