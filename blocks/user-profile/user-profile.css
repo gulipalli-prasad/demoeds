@@ -5,7 +5,6 @@
   float: left;
   width: 100%;
 }
-
 .grey-bg .user-information-box {
   display: flex;
   align-items: flex-start;
@@ -13,14 +12,12 @@
   padding: 20px;
   margin-bottom: 20px;
 }
-
 .grey-bg .user-information-box .user-img {
   width: 20%;
   min-width: 100px;
   text-align: center;
   align-self: end;
 }
-
 .grey-bg .user-information-box .user-img img {
   width: 77px;
   height: 77px;
@@ -28,18 +25,15 @@
   border-radius: 50%;
   margin: 0 auto;
 }
-
 .grey-bg .user-information-box .user-details {
   width: 80%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-
 .grey-bg .user-information-box .user-details .user_bx {
   padding-top: 10px;
 }
-
 .grey-bg .user-information-box .user-details .user_bx .user_name {
   font-size: 1rem;
   font-weight: 500;
@@ -47,25 +41,21 @@
   line-height: 24px;
   font-family: "Fira Sans", sans-serif;
 }
-
 .grey-bg .user-information-box .user-details .user_bx .user_designation {
   font-weight: normal;
   font-size: 0.875rem;
   margin-bottom: 0;
   line-height: 24px;
 }
-
 .grey-bg .user-information-box .user-details .user_bx .user_addr {
   font-weight: normal;
   font-size: 0.875rem;
   line-height: 24px;
 }
-
 .grey-bg .user-information-box .user-details .user_logout {
   align-self: inherit;
   margin-top: 10px;
 }
-
 .user_logout #logoutButton {
   background: #000000;
   padding: 7px 10px;
@@ -86,7 +76,6 @@
   border-color: #000000;
   color: #000;
 }
-
 .popUpmain {
   display: none;
   position: fixed;
@@ -99,7 +88,6 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-
 .popUpmain .modal-content {
   padding: 35px;
   position: relative;
@@ -120,7 +108,6 @@
   border-radius: 0.3rem;
   outline: 0;
 }
-
 .popUpmain .modal-content .close {
   position: absolute;
   right: 10px;
@@ -178,31 +165,25 @@
 .popup.fade-in {
   animation: fadeIn 0.3s ease-in-out forwards;
 }
-
 @media (min-width: 999px) {
   .grey-bg {
     padding: 4.375rem;
   }
-
   .grey-bg .user-information-box {
     margin-bottom: 50px;
     padding: 0;
   }
-
   .grey-bg .user-information-box .user-details {
     flex-direction: row;
   }
-
   .grey-bg .user-information-box .user-details .user_logout {
     align-self: flex-end;
     margin-top: 0;
   }
-
   .grey-bg .user-information-box .user-details .user_logout a:hover {
     text-decoration: none;
   }
 }
-
 /**/
 /**/
 p {
@@ -231,7 +212,6 @@ h2 {
 .text-color-tertiary {
   color: var(--Tertiary-White, #fff);
 }
-
 .btn {
   display: flex;
   height: 32px;
