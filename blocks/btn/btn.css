@@ -44,6 +44,7 @@ body {
   padding-left: 10px;
   line-height: 150%;
   margin-left: 10px;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .cd_breadcrumb li a.hover {
@@ -55,13 +56,14 @@ body {
   margin: 10px 0 20px 0;
   font-weight: 500;
   text-transform: uppercase;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .grey-bg {
   background-color: #fcfcfc;
   padding: 0;
   margin: 50px 0;
-  float: left;
+  /* float: left; */
   width: 100%;
   margin-top: 0;
 }

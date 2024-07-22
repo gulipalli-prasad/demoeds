@@ -818,88 +818,97 @@
     "id": "userprofile",
     "fields": [
       {
-        "component": "text",
+        "component": "container",
+        "label": "Container",
+        "name": "container",
         "valueType": "string",
-        "name": "logoutText",
-        "value": "",
-        "label": "Logout Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "popupHeading",
-        "value": "",
-        "label": "popup Heading"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "popupDesc",
-        "value": "",
-        "label": "popup Desc"
-      },
-      {
-        "component": "aem-content",
-        "valueType": "string",
-        "name": "href",
-        "value": "",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "yesButton",
-        "value": "",
-        "label": "Yes Button"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "noButton",
-        "value": "",
-        "label": "No Button"
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "userImage",
-        "value": "",
-        "label": "User Image"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "userImageAltTxt",
-        "value": "",
-        "label": "UserImage AltTxt"
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "crossFormImage",
-        "value": "",
-        "label": "CrossForm Image"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "crossFormImageAltTxt",
-        "value": "",
-        "label": "CrossFormImage AltTxt"
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "infoIconImage",
-        "value": "",
-        "label": "InfoIcon Image"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "infoIconImageAltTxt",
-        "value": "",
-        "label": "InfoIconImage AltTxt"
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "logoutText",
+            "value": "",
+            "label": "Logout Text"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "popupHeading",
+            "value": "",
+            "label": "Popup Heading"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "popupDesc",
+            "value": "",
+            "label": "Popup Desc"
+          },
+          {
+            "component": "aem-content",
+            "valueType": "string",
+            "name": "href",
+            "value": "",
+            "label": "Link"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "yesButton",
+            "value": "",
+            "label": "Yes Button"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "noButton",
+            "value": "",
+            "label": "No Button"
+          },
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "userImage",
+            "value": "",
+            "label": "User Image"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "userImageAltTxt",
+            "value": "",
+            "label": "User Image Alt Text"
+          },
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "crossFormImage",
+            "value": "",
+            "label": "CrossForm Image"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "crossFormImageAltTxt",
+            "value": "",
+            "label": "CrossForm Image Alt Text"
+          },
+          {
+            "component": "reference",
+            "valueType": "string",
+            "name": "infoIconImage",
+            "value": "",
+            "label": "InfoIcon Image"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "infoIconImageAltTxt",
+            "value": "",
+            "label": "InfoIcon Image Alt Text"
+          }
+        ]
       }
     ]
   }
