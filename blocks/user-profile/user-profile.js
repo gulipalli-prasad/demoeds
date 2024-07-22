@@ -6,6 +6,7 @@ export default function decorate(block) {
     linkEl,
     yesButtonEl,
     noButtonEl,
+    userImageEl,
     userimagealttxtEl,
     crossformimagealttxtEl,
     infoiconimagealttxtEl,
@@ -17,7 +18,8 @@ export default function decorate(block) {
   const link = linkEl?.querySelector("a")?.href || "#";
   const yesButton = yesButtonEl?.textContent?.trim() || "";
   const noButton = noButtonEl?.textContent?.trim() || "";
-
+  const userImageElement = userImageEl.querySelector("img");
+  const userImage = userImageElement?.getAttribute("src")?.trim() || "";
   const userimagealttxt = userimagealttxtEl?.textContent?.trim() || "";
   const crossformimagealttxt =
     crossformimagealttxtEl?.textContent?.trim() || "";
@@ -29,7 +31,7 @@ export default function decorate(block) {
           <div class="grey-bg">
               <div class="user-information-box">
                   <div class="user-img">
-                      <img src="../../icons/user-img.webp" alt="${userimagealttxt}">
+                      <img src="${userImage}" alt="${userimagealttxt}">
                   </div>
                   <div class="user-details">
                       <div class="user_bx">
