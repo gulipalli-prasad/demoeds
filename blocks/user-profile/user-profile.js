@@ -6,12 +6,9 @@ export default function decorate(block) {
     linkEl,
     yesButtonEl,
     noButtonEl,
-    userImageEl,
-    userImageAltTxtEl,
-    crossFormImageEl,
-    crossFormImageAltTxtEl,
-    infoIconImageEl,
-    infoIconImageAltTxtEl,
+    userimagealttxtEl,
+    crossformimagealttxtEl,
+    infoiconimagealttxtEl,
   ] = block.children;
 
   const logoutText = logoutTextEl?.textContent?.trim() || "";
@@ -21,10 +18,10 @@ export default function decorate(block) {
   const yesButton = yesButtonEl?.textContent?.trim() || "";
   const noButton = noButtonEl?.textContent?.trim() || "";
 
-  const userImageAltTxt = userImageAltTxtEl?.textContent?.trim() || "";
-  const crossFormImageAltTxt =
-    crossFormImageAltTxtEl?.textContent?.trim() || "";
-  const infoIconImageAltTxt = infoIconImageAltTxtEl?.textContent?.trim() || "";
+  const userimagealttxt = userimagealttxtEl?.textContent?.trim() || "";
+  const crossformimagealttxt =
+    crossformimagealttxtEl?.textContent?.trim() || "";
+  const infoiconimagealttxt = infoiconimagealttxtEl?.textContent?.trim() || "";
 
   function createProfileCard(data) {
     return `
@@ -32,7 +29,7 @@ export default function decorate(block) {
           <div class="grey-bg">
               <div class="user-information-box">
                   <div class="user-img">
-                      <img src="../../icons/user-img.webp" alt="${userImageAltTxt}">
+                      <img src="../../icons/user-img.webp" alt="${userimagealttxt}">
                   </div>
                   <div class="user-details">
                       <div class="user_bx">
@@ -55,10 +52,10 @@ export default function decorate(block) {
       <div class="popUpmain" id="popup" style="display:none;">
         <div class="modal-content">
           <div class="close" id="close-popup">
-            <img src="../../icons/cross-form.webp" alt="${crossFormImageAltTxt}">
+            <img src="../../icons/cross-form.webp" alt="${crossformimagealttxt}">
           </div>
           <div class="popupContent blue">
-            <h2><img src="../../icons/info-icon.webp" alt="${infoIconImageAltTxt}"> ${popupHeading}</h2>
+            <h2><img src="../../icons/info-icon.webp" alt="${infoiconimagealttxt}"> ${popupHeading}</h2>
             <p>${popupDesc}</p>
             <div class="blackButton">
               <button type="button" class="logout_yes" id="yesButton">${yesButton}</button>
