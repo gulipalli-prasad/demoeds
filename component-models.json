@@ -826,7 +826,7 @@
       },
       {
         "component": "container",
-        "label": "Container",
+        "label": "Popup Details",
         "name": "container",
         "valueType": "string",
         "collapsible": true,
